@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events Example</title>
+    <script src="events.js" defer></script>
+</head>
+<Body>
+
+<!-- Example of 'onclick' -->
+<button onclick="handleButtonClick()">Click Me</button>
+
+<!-- Example of 'onmouseover' and 'onmouseout' -->
+<div onmouseover="handleMouseOver()" onmouseout="handleMouseOut()">
+    Hover over me
+</div>
+
+<!-- Example of 'onkeydown' -->
+<input type="text" onkeydown="handleKeyDown(event)">
+
+<!-- Example of 'onsubmit' -->
+<form onsubmit="handleSubmit(event)">
+    <input type="text" name="username" placeholder="Enter username">
+    <button type="submit">Submit</button>
+</form>
+
+<!-- Example of 'onchange' -->
+<input type="text" onchange="handleChange(event)" placeholder="Type here">
+
+<!-- Example of 'onfocus' -->
+<input type="text" onfocus="handleFocus()" placeholder="Click to focus">
+
+</Body>
+</html>

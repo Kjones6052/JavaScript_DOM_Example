@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Form</title>
+    <script src="pet.js" defer></script>
+    <style>
+        .container {
+            margin: auto;
+            width: 50%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<Body>
+    
+<div class="container">
+    <h2>Pet Adoption Form</h2>
+    <form id="petForm">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required><br><br>
+        <label for="breed">Breed:</label>
+        <input type="text" name="breed" id="breed" required><br><br>
+        <label for="status">Adoption Status:</label>
+        <select name="status" id="status" required>
+            <option value="available">Available</option>
+            <option value="adopted">Adopted</option>
+        </select><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="petList">
+
+    </div>
+</div>
+
+</Body>
+</html>
